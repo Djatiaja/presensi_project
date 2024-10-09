@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 }
             submitButton.setOnClickListener(){
                 selectedTime ="${timePicker.hour}:${timePicker.minute}"
-                selectedDate = "${datepicker.dayOfMonth} ${monthList[datepicker.month]} ${_tempCalendar.get(Calendar.YEAR)}"
+                selectedDate = "${datepicker.dayOfMonth} ${monthList[datepicker.month]} ${datepicker.year}"
 
                 Toast.makeText(this@MainActivity, "Presensi berhasil $selectedDate jam $selectedTime", Toast.LENGTH_SHORT).show()
             }
